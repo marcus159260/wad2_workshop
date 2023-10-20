@@ -43,7 +43,7 @@ jobs:
     # For other --acl options, see: https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl
     
     - name: Deploy to S3  
-      run: aws s3 sync vuejs-frontend/dist s3://yourbucketnamehere/ --delete --acl public-read 
+      run: aws s3 sync vuejs-frontend/dist s3://workshop-student-3/ --delete --acl public-read 
 
     - name: Upload php backend to EC2 - Installing SSHPass (if does not exist on github actions runner)
       run: sudo apt-get install -y sshpass
