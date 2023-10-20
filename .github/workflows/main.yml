@@ -50,5 +50,5 @@ jobs:
 
     # use scp -v for verbose, to identify problems if not working, no need for sudo in scp
     - name: Upload files to EC2 - PHP Backend!
-      run: sudo sshpass -p '${{secrets.EC2_PASS}}' scp -o StrictHostKeyChecking=no -r ./php-backend/* ubuntu@workshopnumber.bchwy.com:/var/www/html/
+      run: sudo sshpass -p '${{secrets.EC2_PASS}}' scp -o StrictHostKeyChecking=no -r ./php-backend/* ubuntu@workshop3.bchwy.com:/var/www/html/
   
